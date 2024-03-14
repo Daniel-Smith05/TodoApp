@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin: 0rem 2rem;
+}
+.logo{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.logo span{
+    color: rgb(240, 8, 8) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.down{
+    padding: 1rem 0rem;
+    display: flex;
+    width: 50%;
+}
+.down input{
+    width: 70%;
+    height: 40px;
+    border: 0.5px solid gray;
+}
+::placeholder{
+    color: grey;
+    padding: 0rem 0.5rem;
+}
+
+.down form button{
+    width: 300%;
+    height: 40px;
+    background-color: rgb(240, 8, 8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.down button:hover{
+    background-color: rgb(167, 4, 4);
+}
+
+main{
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    width: 97.5%;
+}
+main .full{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+/* main .full .right button{
+    background-color: rgb(240, 8, 8);
+    border: none;
+    border-radius: 7%;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 30px;
+    width: 45%; 
+} */
+main .full .know{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+main .full .know .in button{
+    height: 30px;
+    width: 80px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: rgb(83, 82, 82);
+    transition: 0.5s;
+}
+main .full .know .in button:hover{
+    background-color: lightgrey;
+}
+main .full .know .out button{
+    height: 30px;
+    width: 80px;
+    border-radius: 7%;
+    border: none;
+    background-color: rgb(240, 8, 8);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+main .full .know .out button:hover{
+    background-color: rgb(167, 4, 4) ;
+}
+
+
+/* main .full .right button:hover{
+    background-color: rgb(167, 4, 4);
+}
+main .full .right{
+    width: 15%;
+}
+main .full .left .check span{
+    font-size: 100%;
+    margin: auto;    
+} */
+main .full .left .check input{
+    height: 3vh;
+    width: 4vh;
+}
+
+footer{
+    text-align: center;
+    margin: -0.5rem 0rem;
+    font-size: larger;
+}
+@media (max-width :667px){
+    main .full .know .out button{
+        display: flex;
+        flex-wrap: wrap;
+        height: 99%;
+        align-items: center;
+        width: 100%;
+        border-radius: 7%;
+        border: none;
+        background-color: rgb(240, 8, 8);
+        color: white;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    main .full .know .in button{
+        height: 30px;
+        width: 40px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        color: rgb(83, 82, 82);
+        transition: 0.5s;
+    }
+    .down form button{
+        width: 150%;
+        height: 40px;
+        background-color: rgb(240, 8, 8);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    main .full .know{
+        justify-content: space-between;
+        width: 25%;
+    }
+    main{
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+        width: 90%;
+    }
+}
